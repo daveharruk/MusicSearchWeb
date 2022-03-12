@@ -1,0 +1,40 @@
+﻿@page
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model MusicSearchWeb.Pages.IndexModel
+@{
+    ViewData["Title"] = "Music search";
+}
+
+<h3>Search for all songs and albums by a given artist</h3>
+
+<form asp-page="./Index" method="get">
+    Artist name: <input type="text" asp-for="SearchText" />
+    <input type="submit" value="Search" />
+</form>
+
+<br />
+
+@if (Model.Songs != null && Model.Songs.Count > 0)
+{
+    <table class="table table-sm table-striped table-hover border-bottom">
+        <thead>
+            <tr>
+                <th>Artist</th>
+                <th>Album</th>
+                <th>Song</th>
+            </tr>
+        </thead>
+        @foreach (var song in Model.Songs)
+        {
+            <tr>
+                <td>@song.ArtistName</td>
+                <td>@song.AlbumName</td>
+                <td>@song.SongName</td>
+            </tr>
+        }
+    </table>
+}
+else
+{
+    <div>No results</div>
+}
