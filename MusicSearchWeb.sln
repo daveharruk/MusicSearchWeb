@@ -5,7 +5,7 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MusicSearchWeb", "MusicSearchWeb.csproj", "{C6A75A14-388D-4325-8253-D2545FD4B989}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicSearchWebTest", "..\MusicSearchWebTest\MusicSearchWebTest.csproj", "{8978D330-05A5-4E53-B628-D67EDCB594C5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicSearchWebTest", "MusicSearchWebTest.csproj", "{8978D330-05A5-4E53-B628-D67EDCB594C5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
